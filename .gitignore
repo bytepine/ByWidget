@@ -77,7 +77,6 @@ Plugins/*/Intermediate/*
 DerivedDataCache/*
 
 # Custom Dir
-Plugins/UnLua
 Plugins/Developer/RiderLink
 
 # Mac
