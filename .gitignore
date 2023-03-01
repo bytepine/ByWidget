@@ -78,6 +78,8 @@ DerivedDataCache/*
 
 # Custom Dir
 Plugins/Developer/RiderLink
+Plugins/UnLuaExtensions/*/Intermediate/*
+Plugins/UnLuaExtensions/*/Binaries/*
 
 # Mac
 .DS_Store
