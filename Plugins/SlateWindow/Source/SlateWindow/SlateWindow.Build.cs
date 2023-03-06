@@ -1,10 +1,10 @@
-﻿// Copyright Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 
 using UnrealBuildTool;
 
-public class ByUMG : ModuleRules
+public class SlateWindow : ModuleRules
 {
-	public ByUMG(ReadOnlyTargetRules Target) : base(Target)
+	public SlateWindow(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 		
@@ -26,7 +26,6 @@ public class ByUMG : ModuleRules
 			new string[]
 			{
 				"Core",
-				"UnLua",
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
@@ -35,13 +34,14 @@ public class ByUMG : ModuleRules
 		PrivateDependencyModuleNames.AddRange(
 			new string[]
 			{
+				"Projects",
+				"InputCore",
+				"UnrealEd",
+				"ToolMenus",
 				"CoreUObject",
 				"Engine",
 				"Slate",
 				"SlateCore",
-				"UMG",
-				"UnLua",
-                "Lua",
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);
